@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Profile Image hover effect</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- ------------ Font awesome CDN link ------------------ -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+	
+	  <img src=
+  "https://media.geeksforgeeks.org/wp-content/uploads/20200122115631/GeeksforGeeks210.png"/>
+	
+	  <h3 id="DarkModetext">Dark Mode is OFF</h3>
+	  <button onclick="darkMode()">Darkmode</button>
+	  <button onclick="lightMode()">LightMode</button>
+	  <script>
+		function darkMode() {
+		  var element = document.body;
+		  var content = document.getElementById("DarkModetext");
+		  element.className = "dark-mode";
+		  content.innerText = "Dark Mode is ON";
+		}
+		function lightMode() {
+		  var element = document.body;
+		  var content = document.getElementById("DarkModetext");
+		  element.className = "light-mode";
+		  content.innerText = "Dark Mode is OFF";
+		}
+	  </script>
+	<div class="image-area">
+		<div class="img-wrapper">
+			<section class="contenido">
+			<img class="img" src="./Imagenes/img1.png">
+			<h2>Edgar Herrera</h2>
+		    </section>
+			<div class="socialred">
+				<a class="icon icon-face" href="https://www.facebook.com/profile.php?id=100041673289777" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a class="icon icon-inst" href="https://instagram.com/hpegrr" target="_blank" ><i class="fab fa-instagram"></i></a>
+				<a class="icon icon-tele" href="https://t.me/ketegiya" target="_blank"><i class="fab fa-telegram"></i></a>
+				<a class="icon icon-what" href="https://wa.me/5212216523220?text=holi%20crayoli" target="_blank"><i class="fab fa-whatsapp"></i></a>
+				</div>
+		</div>
+	</div>
+</body>
+</html>
